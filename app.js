@@ -1,5 +1,5 @@
 let listaNumeroSort = [];
-let numeroLimite = 10 ;
+let numeroLimite = 15 ;
 let numSecreto = gerarNumRandom();
 let tentativas = 1;
 
@@ -11,7 +11,7 @@ function exibirTextoNaTela(tag,texto){
 
 }
 exibirTextoNaTela('h1', 'Jogo do número secreto');
-exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
+exibirTextoNaTela('p', 'Escolha um número entre 1 e 15');
 
 function verificarTentativa(){
   let chute = parseInt(document.querySelector('input').value);
@@ -42,7 +42,7 @@ exibirMensagemInicial();
 function exibirMensagemInicial(){
 
   exibirTextoNaTela('h1', 'Jogo do número secreto');
-  exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
+  exibirTextoNaTela('p', 'Escolha um número entre 1 e 15');
 
 }
 function reiniciarJogo(){
